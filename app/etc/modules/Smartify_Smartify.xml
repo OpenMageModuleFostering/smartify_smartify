@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Smartify_Smartify>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Smartify_Smartify>
+    </modules>
+</config>

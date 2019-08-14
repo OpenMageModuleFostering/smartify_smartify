@@ -1,0 +1,51 @@
+<config>
+    <modules>
+        <Smartify_Smartify>
+            <version>0.1.0</version>
+        </Smartify_Smartify>
+    </modules>
+
+    <frontend>
+        <layout>
+            <updates>
+                <smartify>
+                    <file>smartify.xml</file>
+                </smartify>
+            </updates>
+        </layout>
+    </frontend>
+
+
+    <global>
+        <helpers>
+            <smartify>
+                <class>Smartify_Smartify_Helper</class>
+            </smartify>
+        </helpers>
+        <events>
+
+            <sales_quote_save_after>
+              <observers>
+                  <smartify_smartify_observer>
+                      <type>singleton</type>
+                      <class>Smartify_Smartify_Model_Observer</class>
+                      <method>updateQuote</method>
+                  </smartify_smartify_observer>
+              </observers>
+            </sales_quote_save_after>
+
+            <sales_order_save_after>
+              <observers>
+                  <smartify_smartify_observer>
+                      <type>singleton</type>
+                      <class>Smartify_Smartify_Model_Observer</class>
+                      <method>updateOrder</method>
+                  </smartify_smartify_observer>
+              </observers>
+            </sales_order_save_after>
+
+
+        </events>
+    </global>
+
+</config>

@@ -1,0 +1,21 @@
+<config>
+    <acl>
+       <resources>
+           <admin>
+               <children>
+                   <system>
+                       <children>
+                           <config>
+                               <children>
+                                   <smartify_options>
+                                       <title>Smartify Configuration</title>
+                                   </smartify_options>
+                               </children>
+                           </config>
+                       </children>
+                   </system>
+               </children>
+           </admin>
+       </resources>
+    </acl>
+</config>
