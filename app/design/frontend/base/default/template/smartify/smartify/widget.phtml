@@ -1,8 +1,8 @@
 <?php if(Mage::getStoreConfig('smartify_options/setup/enabled') == true){ ?>
 
   <?php if(Mage::getStoreConfig('smartify_options/setup/endpoint') == null){ ?>
-    <script type="text/javascript" src="http://widget.getsmartify.com/widget/shareandtell_widget.js?config_id=<?php echo Mage::getStoreConfig('smartify_options/setup/config_id'); ?>&external_user_session=<?php echo Mage::getSingleton('checkout/session')->getSessionId(); ?>" id="shareandtell_script_1"></script>
+    <script type="text/javascript" src="https://widget.getsmartify.com/widget/<?php echo Mage::getStoreConfig('smartify_options/setup/config_id'); ?>/<?php echo Mage::getSingleton('checkout/session')->getSessionId(); ?>/shareandtell_widget.js?referer_page_url=<?php echo $this->helper('core/url')->getCurrentUrl() ?>" id="shareandtell_script_1"></script>
   <?php } else { ?>
-    <script type="text/javascript" src="<?php echo Mage::getStoreConfig('smartify_options/setup/endpoint'); ?>/widget/shareandtell_widget.js?config_id=<?php echo Mage::getStoreConfig('smartify_options/setup/config_id'); ?>&external_user_session=<?php echo Mage::getSingleton('checkout/session')->getSessionId(); ?>" id="shareandtell_script_1"></script>
+    <script type="text/javascript" src="<?php echo Mage::getStoreConfig('smartify_options/setup/endpoint'); ?>/widget/<?php echo Mage::getStoreConfig('smartify_options/setup/config_id'); ?>/<?php echo Mage::getSingleton('checkout/session')->getSessionId(); ?>/shareandtell_widget.js?referer_page_url=<?php echo $this->helper('core/url')->getCurrentUrl() ?>" id="shareandtell_script_1"></script>
   <?php } ?>
 <?php } ?>
