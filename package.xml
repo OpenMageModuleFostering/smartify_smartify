@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>Smartify_Smartify</name>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <stability>stable</stability>
     <license>OSL</license>
     <channel>community</channel>
@@ -10,9 +10,9 @@
     <description>Smartify provides a technology platform to help clients maximize the efficiency of their digital marketing spend by identifying key e-commerce goals, testing various online user experiences and discovering which customer interactions help move our client towards their stated goals. We can help answer questions like "when and how should we interact with our customers to increase their likelihood of purchase?", "can we improve sales of key items without relying on price reductions?", and "which elements of our online shopping experience lead to higher average lifetime value among our specific customer demographic?", just to give a few examples. We build our user experiences by designing and executing complete incentivized campaigns with our specially built tools and years of industry experience.</description>
     <notes>April 9, 2015</notes>
     <authors><author><name>Thomas Pouncy</name><user>smartify</user><email>thomas@getsmartify.com</email></author></authors>
-    <date>2015-04-09</date>
-    <time>20:10:08</time>
+    <date>2015-06-02</date>
+    <time>19:35:22</time>
     <contents><target name="magelocal"><dir name="Smartify"><dir name="Smartify"><dir name="Helper"><file name="Data.php" hash="2e9d5e12ac8b3fd06f369c9f15bd4b58"/></dir><dir name="Model"><file name="Config.php" hash="b89512d295c9519dbadb43d81e4eeb55"/><file name="Observer.php" hash="847ac0162bdfea7f5a4940a3f4cebf50"/></dir><dir name="etc"><file name="adminhtml.xml" hash="f9ba98b92c3008a9dc39d007de7ad3ef"/><file name="config.xml" hash="02475487a61431cab42fbcb924481530"/><file name="system.xml" hash="e4a9bc0e756a2a09f9fc4db1661758a3"/></dir></dir><file name=".DS_Store" hash="0be08eb12e189cb860893cbd2b5dcfa1"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="smartify"><dir name="smartify"><file name="widget.phtml" hash="15aa51dad2c7eb9fda5c95d8554d0128"/></dir></dir></dir><dir name="layout"><file name="smartify.xml" hash="f31117b5e8260b08b161a7e27209adf9"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Smartify_Smartify.xml" hash="9998550331270e6248f202bc747ef8fc"/></dir></target></contents>
     <compatible/>
-    <dependencies><required><php><min>5.4.0</min><max>5.6.4</max></php></required></dependencies>
+    <dependencies><required><php><min>5.3.0</min><max>5.7.0</max></php></required></dependencies>
 </package>
