@@ -7,6 +7,7 @@ class Smartify_Smartify_Model_Observer extends Mage_Core_Model_Abstract
   const SMARTIFY_API_VERSION              = 1;
   const SMARTIFY_MAGENTO_PATH             = "/api/v1/retail/orders/";
   const SMARTIFY_OAUTH_TOKEN_PATH         = "/oauth/token";
+  const SMARTIFY_MAGENTO                  = "magento";
 
 
   function domain_name(){
@@ -78,6 +79,7 @@ class Smartify_Smartify_Model_Observer extends Mage_Core_Model_Abstract
   function quoteData($quote){
     $cart_data = array();
     $cart_data['id'] = $quote->getId();
+    $cart_data['ecommerce_integration_type'] = self::SMARTIFY_MAGENTO;
     $cart_data['total_price_before_discounts'] = $quote->getBaseSubtotal();
     $cart_data['total_price_after_discounts'] = $quote->getBaseSubtotalWithDiscount();
     $cart_data['currency'] = $quote->getBaseCurrencyCode();
@@ -132,7 +134,7 @@ class Smartify_Smartify_Model_Observer extends Mage_Core_Model_Abstract
 
   function generalData(){
     $gen_data = array();
-    $gen_data['smartify_config_id'] = Mage::getStoreConfig('smartify_options/setup/config_id');
+    $gen_data['smartify_product_id'] = Mage::getStoreConfig('smartify_options/setup/product_id');
     $gen_data['time'] = time();
     $gen_data['smartify_extension_version'] = self::SMARTIFY_EXTENSION_VERSION;
     $gen_data['smartify_extension_platform'] = self::SMARTIFY_EXTENSION_STORE;
