@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Smartify_Smartify",
+    "name": "OpenMageModuleFostering\/Smartify_Smartify",
     "type": "magento-module",
     "license": "OSL",
     "homepage": "",
     "description": "This plugin installs and integrates the Smartify widget into your ecommerce site, which helps you to maximize the efficiency of your ad-spend",
     "authors": [
-    {
-        "name": "Thomas Pouncy",
-        "email": "thomas@getsmartify.com"
-    }
-],
+        {
+            "name": "Thomas Pouncy",
+            "email": "thomas@getsmartify.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
