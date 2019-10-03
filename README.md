@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 This plugin installs and integrates the Smartify widget into your ecommerce site, which helps you to maximize the efficiency of your ad-spend
